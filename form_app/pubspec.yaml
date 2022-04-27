@@ -14,12 +14,16 @@ dependencies:
   http: ^0.13.0
   json_annotation: any
   english_words: ^4.0.0
+  window_size:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  json_serializable: ^4.0.0
-  build_runner: ^1.11.0
+  json_serializable: ^6.1.5
+  build_runner: ^2.1.8
   flutter_lints: ^1.0.0
 
 flutter:

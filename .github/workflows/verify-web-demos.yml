@@ -1,15 +1,20 @@
 name: Verify web demos
+
+# Declare default permissions as read only.
+permissions: read-all
+
 on: [push, pull_request]
 jobs:
   verify-web-demos:
     runs-on: ubuntu-latest
+    if: github.repository == 'flutter/samples'
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
           submodules: true
           fetch-depth: 0
-      - uses: subosito/flutter-action@4389e6cbc6cb8a4b18c628ff96ff90be0e926aa8
+      - uses: subosito/flutter-action@d8687e6979e8ef66d2b2970e2c92c1d8e801d7bf
         with:
           channel: stable
       - name: Init scripts

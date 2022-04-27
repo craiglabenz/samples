@@ -15,7 +15,10 @@ declare -ar PROJECT_NAMES=(
     "add_to_app/prebuilt_module/flutter_module"
     "android_splash_screen"
     "animations"
-    "experimental/desktop_photo_search"
+    # TODO(domesticmouse): Re-enable once Dart 2.17 is stable
+    # "desktop_photo_search/fluent_ui"
+    # TODO(domesticmouse): Re-enable once Dart 2.17 is stable
+    # "desktop_photo_search/material"
     "experimental/federated_plugin/federated_plugin"
     "experimental/web_dashboard"
     "experimental/linting_tool"
@@ -29,12 +32,15 @@ declare -ar PROJECT_NAMES=(
     "null_safety/null_safe_app"
     "null_safety/null_unsafe_app"
     "place_tracker"
-    "platform_channels"
-    "platform_design"
+    # TODO(domesticmouse): Re-enable once Dart 2.17 is stable
+    # "platform_channels"
+    # TODO(domesticmouse): Re-enable once Dart 2.17 is stable
+    # "platform_design"
     "platform_view_swift"
     "provider_counter"
     "provider_shopper"
-    "testing_app"
+    # TODO(domesticmouse): Re-enable once Dart 2.17 is stable
+    # "testing_app"
     "veggieseasons"
 )
 
